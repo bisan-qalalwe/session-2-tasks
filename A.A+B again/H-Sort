@@ -1,0 +1,42 @@
+
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+using ll = long long;
+using ld = long double;
+
+#define all(x) (x).begin(), (x).end()
+
+void solve(int arr[], int n) {
+
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>arr[j]){
+                swap(arr[i],arr[j]);
+            }
+        }
+    }
+ for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+
+
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+int x,t;
+
+   cin>>t;
+   int arr[t];
+   for(int i=0;i<t;i++){
+     cin>>x;
+     arr[i] = x;
+   }
+    solve(arr,t);
+
+
+    return 0;
+}
