@@ -1,0 +1,36 @@
+
+//#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+
+using ll = long long;
+using ld = long double;
+
+#define all(x) (x).begin(), (x).end()
+
+void solve(string k) {
+
+if(k=="abc"||k[0]=='a' || k[1]=='b' || k[2]=='c'){
+    cout<<"YES"<<endl;
+}
+  
+
+
+else{
+    cout<<"NO"<<endl;
+}
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+string s;
+int t;
+   cin>>t;
+   while(t!=0){
+   cin>>s;
+    solve(s);
+t--;
+   }
+  
+    return 0;
+}
